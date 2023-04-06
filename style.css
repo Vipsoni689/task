@@ -507,9 +507,8 @@
   border: none;
   outline: none;
   color: white;
-  border-radius: 50%;
-  right:10px;
-  top: 20px;
+  right: 15px;
+  top: 25px;
 
 }
 .pop button:hover{
