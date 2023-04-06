@@ -601,4 +601,15 @@
   width: 40px;
   height: 40px;
 }
+
+
+.proper .mail{
+  top: 580px;
+}
+.proper .whatsapp{
+  top: 520px;
+}
+.proper .contact{
+  top: 460px;
+}
 }
