@@ -17,3 +17,10 @@ function form1(){
 function cut2(){
     document.getElementById("form").classList.remove("active")
 }
+
+
+
+
+const cut3=()=>{
+    document.getElementById("pop").style="display:none"
+}
