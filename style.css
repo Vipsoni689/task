@@ -413,88 +413,192 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  display:grid;
+  display: grid;
   place-items: center;
 }
 
+.proper .contact{
+  position: fixed;
+  right: 20px;
+  top: 440px;
+}
+
+.proper .contact i{
+  color: white;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(7, 62, 228);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.proper .mail{
+  position: fixed;
+  right: 20px;
+  top: 560px;
+}
+
+.proper .mail i{
+  color: white;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(255, 91, 3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.pop {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(53, 50, 50, 0.614),
+    rgba(39, 37, 37, 0.728)
+  );
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+
+}
+.pop .swiper {
+  width:45%;
+  height: 450px;
+
+  border: 5px solid rgb(255, 115, 0);
+}
+.pop button{
+  position:absolute;
+  font-size: 50px;
+  z-index:20;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(rgb(241, 95, 10), rgb(241, 95, 10));
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 50%;
+  right:10px;
+  top: 20px;
+
+}
+.pop button:hover{
+  background: red;
+}
+.pop .swiper .swiper-wrapper img{
+  width: 100%;
+  height: 100%;
+}
+
+.pop .swiper .swiper-button-prev::after,.pop .swiper .swiper-button-next::after{
+    /* background-color: red !important; */
+   color:rgb(241, 95, 10);
+   font-weight: 800;
+   font-size: 30px;
+} 
+
+.pop .swiper .swiper-button-prev,.pop .swiper .swiper-button-next{
+  background-color: rgb(255, 255, 255);
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+}
 
 
+@media screen and (max-width: 500px) {
+  #navbar {
+    width: auto;
+  }
+  #navbar img {
+    width: 75px;
+  }
 
+  #navbar #list {
+    display: none;
+  }
 
+  #navbar .search {
+    display: none;
+  }
 
+  #navbar .online {
+    display: none;
+  }
+  #navbar button {
+    font-size: 10px;
+    padding: 5px;
+    width: 100px;
+  }
+  #navbar #call i {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
 
+  #navbar .call span {
+    display: none;
+  }
+  #navbar #toggle i {
+    width: 50px;
+    height: 50px;
+  }
+  .main_slide {
+    width: 100%;
+  }
+  .main_slide {
+    background-color: white;
+  }
 
-
-
-
-
-
-@media screen and (max-width:500px) {
-    #navbar{
-      width: auto;
-
-    }
-    #navbar img{
-      width:75px;
-    }
-
-    #navbar #list {
-      display: none;
-    }
-
-    #navbar .search{
-      display: none;
-    }
-
-    #navbar .online{
-      display: none;
-    }
-    #navbar button{
-      font-size: 10px;
-      padding: 5px;
-      width: 100px;
-    }
-    #navbar #call i {
-      width: 35px;
-      height: 35px;
-      font-size: 12px;
-    }
-    
-    #navbar .call span {
-      display: none;
-    }
-    #navbar #toggle i{
-        width:50px;
-        height: 50px;
-    }
-    .main_slide{
-      width: 100%;
-    }
-    .main_slide{
-      background-color: white;
-    }
-
-    .main_slide .box{
+  .main_slide .box {
     overflow: scroll;
     background-color: white;
-    }
-    .main_slide .box #slide{
-      flex-direction: column;
-      width:100%;
-      height: auto;
-    
-      /* overflow: scroll; */
-    }
+  }
+  .main_slide .box #slide {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
 
-    .main_slide .box #slide .left{
-      background-color: white;
-      width:auto;
-      height: auto;
-    }
+    /* overflow: scroll; */
+  }
 
-    .main_slide .box #slide .right{
-      height: 500px;
-      width: auto;
-    }
+  .main_slide .box #slide .left {
+    background-color: white;
+    width: auto;
+    height: auto;
+  }
 
+  .main_slide .box #slide .right {
+    height: 500px;
+    width: auto;
+  }
+
+  .pop{
+    width: 100%;
+    height: 100%;
+
+  }
+  .pop .swiper {
+    width:100%;
+    height: 450px;
+  
+    border: 5px solid rgb(255, 115, 0);
+  }
+
+
+  .pop .swiper .swiper-button-prev::after,.pop .swiper .swiper-button-next::after{
+
+   font-size: 20px;
+} 
+
+.pop .swiper .swiper-button-prev,.pop .swiper .swiper-button-next{
+  width: 40px;
+  height: 40px;
+}
 }
