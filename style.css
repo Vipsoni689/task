@@ -405,6 +405,7 @@
   position: fixed;
   right: 20px;
   top: 500px;
+  z-index: 600;
 }
 .proper .whatsapp i {
   font-size: 30px;
@@ -421,6 +422,7 @@
   position: fixed;
   right: 20px;
   top: 440px;
+  z-index: 600;
 }
 
 .proper .contact i{
@@ -438,6 +440,7 @@
   position: fixed;
   right: 20px;
   top: 560px;
+  z-index: 600;
 }
 
 .proper .mail i{
@@ -445,6 +448,24 @@
   font-size: 20px;
   color: white;
   background-color: rgb(255, 91, 3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.proper .github{
+  position: fixed;
+  right: 20px;
+  top: 620px;
+  z-index: 600;
+}
+
+.proper .github i{
+  color: white;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(39, 37, 36);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -509,6 +530,71 @@
   height: 60px;
 
   border-radius: 50%;
+}
+
+section{
+  height: 100vh;
+  background-image: url(./images/1659681756608921122.webp);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 100px;
+
+}
+
+section .qube{
+  width: 30%;
+  height: 280px;
+  box-shadow: 0 0 2px gray;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.514),rgba(255, 255, 255, 0.537));
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+section .qube::after{
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(rgb(255, 94, 0),rgb(255, 140, 0));
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+section .qube:hover::after{
+    height: 100%;
+}
+section .qube:hover h1,section .qube:hover p{
+  color: white;
+}
+section .qube:hover{
+  cursor: pointer;
+}
+
+section .qube h1{
+  color: black;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+
+section .qube p{
+  transition: all 0.8s;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: justify;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -582,6 +668,7 @@
   .pop{
     width: 100%;
     height: 100%;
+    z-index: 999;
 
   }
   .pop .swiper {
@@ -602,14 +689,37 @@
   height: 40px;
 }
 
+.form{
+  z-index: 999;
+}
 
+
+.proper .mail i,.proper .contact i,.proper .whatsapp i,.proper .github i{
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
 .proper .mail{
-  top: 580px;
+  top: 540px;
 }
 .proper .whatsapp{
-  top: 520px;
+  top: 490px;
 }
 .proper .contact{
-  top: 460px;
+  top: 440px;
+}
+.proper .github{
+  top: 590px;
+}
+
+section{
+  padding: 10px;
+  flex-direction: column;
+  height: auto;
+}
+
+section .qube{
+  width:100%;
+  margin-bottom: 20px;
 }
 }
